@@ -1,7 +1,13 @@
-ALGORITHM insertion_sort(VAR arr: ARRAY)
+ALGORITHM Insertion_sort(VAR arr: ARRAY)
 VAR
   VAR sorted: ARRAY,
   VAR i : INTEGER
 BEGIN
-  set_instructions
+  FOR i FROM 0 TO arr.length STEP 1 DO
+    IF (arr[i]>arr[i+1]) THEN
+      swap(arr[i], arr[i+1])
+    END_IF
+    sorted := insert(arr[i])
+  END_FOR
+  write(sorted)
 END
