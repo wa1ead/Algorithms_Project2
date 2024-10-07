@@ -1,6 +1,7 @@
 ALGORITHM insertion_sort(VAR arr: ARRAY)
 VAR
-  set_declarations
+  VAR sorted: ARRAY,
+  VAR i : INTEGER
 BEGIN
   set_instructions
 END
