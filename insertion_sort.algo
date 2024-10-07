@@ -1,0 +1,6 @@
+ALGORITHM insertion_sort(VAR arr: ARRAY)
+VAR
+  set_declarations
+BEGIN
+  set_instructions
+END
